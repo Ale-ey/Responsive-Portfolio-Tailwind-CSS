@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ali</title>
+    <!-- tailwindcss  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- icons  -->
+
+    <style>
+        @import "tailwindcss";
+        * {
+            font-family: "Montserrat", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="m-0 p-0">
+    <div class="main grid grid-cols-1 lg:grid-cols-2">
+        <!-- img container left side -->
+
+        <div class="hidden lg:block h-screen sticky top-0">
+            <img class="w-full h-full object-cover"
+                src="https://i.pinimg.com/736x/c4/c7/d1/c4c7d114dbc2403f7ce2ccf9c42ce88a.jpg" alt="#" />
+        </div>
+
+        <!-- right section  -->
+
+        <div class="right-section overflow-y-auto-auto">
+            <div class="header px-4 pt-4">
+                <!-- nav bar  -->
+                <div class="flex justify-end text-4xl text-black/70 ">
+                    <i class="fa-solid fa-bars hover:bg-black/30 p-3 cursor-pointer"></i>
+                </div>
+                <div class="flex flex-col items-center p-70">
+                    <h1 class="text-8xl font-bold whitespace-nowrap m-7">
+                        Jane Doe
+                    </h1>
+                    <p class="whitespace-nowrap m-4 text-2xl">Photographer and Web Designer.</p>
+                    <div class="lg:hidden">
+                        <img class="w-full"
+                            src="https://i.pinimg.com/736x/c4/c7/d1/c4c7d114dbc2403f7ce2ccf9c42ce88a.jpg" alt="#" />
+                    </div>
+                    <button
+                        class="bg-black/10 text-xl px-7 py-5 whitespace-nowrap m-7 hover:bg-black/30 cursor-pointer hover tracking-wider flex justify-center items-center gap-2">
+                        <i class="fa-solid fa-download"></i>
+                        Download Resume
+                    </button>
+                </div>
+                <!-- porfolio container  -->
+                <div class="fw-full px-4 my-7">
+                    <h2 class="text-3xl text-black/70 m-2">My Portfolio</h2>
+                    <!-- seperator div  -->
+                    <div class="border-b-1 border-gray-400/10 m-3"></div>
+                    <!-- images of porfolio -->
+                    <!-- image container  -->
+                    <div id="img-container" class="columns-1 sm:columns-2 gap-4 space-y-4">
+                        <!-- imges by map function -->
+                    </div>
+                </div>
+                <!-- About Container  -->
+                <div class="about p-7">
+                    <h2 class="text-3xl text-black/70 my-4">About</h2>
+                    <div class="border-b-1 border-black/20 m-3"></div>
+                    <!-- some text about me  -->
+                    <p class="text-justify">
+                        Some text about me. Some text about me. I am lorem ipsum
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat.
+                    </p>
+
+                    <h3 class="text-2xl text-black/70 my-7 py-4 overflow-hidden">
+                        My Skills
+                    </h3>
+                    <p class="tracking-[6px] text-black/70 my-4">Photography</p>
+                    <!-- progress-bar  -->
+                    <div class="w-full bg-black/10 h-8">
+                        <div class="w-[95%] bg-black/70 h-full text-white flex items-center justify-center">
+                            95%
+                        </div>
+                    </div>
+                    <p class="tracking-[6px] text-black/70 my-4">Web Design</p>
+                    <!-- progress-bar  -->
+                    <div class="w-full bg-black/10 h-8 overflow-hidden">
+                        <div class="w-[85%] bg-black/70 h-full text-white  flex items-center justify-center">
+                            85%
+                        </div>
+                    </div>
+
+                    <p class="tracking-[6px] text-black/70 my-4">Photoshop</p>
+                    <!-- progress-bar -->
+                    <div class="w-full bg-black/10 h-8 overflow-hidden">
+                        <div class="w-[80%] bg-black/70 h-full text-white flex items-center justify-center">
+                            80%
+                        </div>
+                    </div>
+                    <!-- project details  -->
+                    <div
+                        class="w-full bg-black/70 my-10 text-white flex flex-col sm:flex-row sm:justify-around sm:items-center py-12 px-4 text-center">
+                        <div id="partners" class="p-8 sm:p-0">
+                            <h4 class="text-2xl">15+</h4>
+                            <p>Partners</p>
+                        </div>
+                        <div id="projectDone" class="p-8 sm:p-0">
+                            <h4 class="text-2xl">55+</h4>
+                            <p>Project Done</p>
+                        </div>
+                        <div id="happyClients" class="p-8 sm:p-0">
+                            <h4 class="text-2xl">89+</h4>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div id="meetings" class="p-8 sm:p-0">
+                            <h4 class="text-2xl">150+</h4>
+                            <p>Meetings</p>
+                        </div>
+                    </div>
+                    <button
+                        class="bg-black/10 text-xl px-7 py-5 whitespace-nowrap my-7 hover:bg-black/30 cursor-pointer hover tracking-wider flex justify-center items-center gap-2">
+                        <i class="fa-solid fa-download"></i>
+                        Download Resume
+                    </button>
+
+                    <h3 class="text-2xl text-gray-500 my-7 py-4 overflow-hidden">
+                        My Reputation
+                    </h3>
+                    <!-- reviews-container  -->
+                    <div class="flex flex-col gap-5">
+                        <!-- 1st profile  -->
+                        <div class="flex justify-start gap-5">
+                            <!-- profile pic  -->
+                            <div class="profile-pic w-[80px] h-[80px] rounded-[50%] overflow-hidden">
+                                <img src="https://i.pinimg.com/736x/2b/cc/55/2bcc55b3291035c4e53afbaa5dd1ae83.jpg"
+                                    alt="#" />
+                            </div>
+                            <div class="flex flex-col gap-3 py-2">
+                                <div class="flex items-center gap-7">
+                                    <h4 class="text-lg">John Travolta.</h4>
+                                    <p class="text-sm text-gray-500">Web Designer.</p>
+                                </div>
+                                <p class="text-sm text-gray-500">
+                                    Jane Doe is just awesome. I am so happy to have met her!
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 2nd -->
+
+                        <div class="flex justify-start gap-5">
+                            <!-- profile pic  -->
+                            <div class="profile-pic w-[80px] h-[80px] rounded-[50%] overflow-hidden">
+                                <img src="https://i.pinimg.com/736x/e1/32/40/e1324083fd1defe1a3c960d88164789e.jpg"
+                                    alt="#" />
+                            </div>
+                            <div class="flex flex-col gap-3 py-2">
+                                <div class="flex items-center gap-7">
+                                    <h4 class="text-lg">Chandler Bing.</h4>
+                                    <p class="text-sm text-gray-500">CEO at Mighty Schools.</p>
+                                </div>
+                                <p class="text-sm text-gray-500">
+                                    Jane Doe is just awesome. I am so happy to have met her!
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 3rd profile -->
+
+                        <div class="flex justify-start gap-5">
+                            <!-- profile pic  -->
+                            <div class="profile-pic w-[80px] h-[80px] rounded-[50%] overflow-hidden">
+                                <img src="https://i.pinimg.com/736x/43/71/0f/43710f32c6fc09258dc246870064ace3.jpg"
+                                    alt="#" />
+                            </div>
+                            <div class="flex flex-col gap-3 py-2">
+                                <div class="flex items-center gap-7">
+                                    <h4 class="text-lg">Robert De Niro.</h4>
+                                    <p class="text-sm text-gray-500">Product Manager.</p>
+                                </div>
+                                <p class="text-sm text-gray-500">
+                                    Jane Doe is just awesome. I am so happy to have met her!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- My price  -->
+                    <div class="my-price">
+                        <h3 class="text-2xl text-gray-500 my-7 py-4 overflow-hidden">
+                            My Price
+                            <!-- price type basic & pro  -->
+                            <!-- price card container -->
+                            <div class="columns-1 sm:columns-2 my-7">
+                                <!-- basic price  -->
+                                <div class="max-w-sm shadow-sm hover:shadow-xl transition-shadow duration-100 ">
+                                    <!-- header -->
+                                    <div class="bg-black/60 text-white text-center py-8">
+                                        <h3>Basic</h3>
+                                    </div>
+                                    <!-- features  -->
+                                    <div class="bg-white divide-y divide-gray-200 text-center text-gray-400">
+                                        <div class="py-4">Web Design</div>
+                                        <div class="py-4">Photography</div>
+                                        <div class="py-4">5GB Storage</div>
+                                        <div class="py-4">Mail Support</div>
+                                        <!-- price section  -->
+                                        <div class="text-center bg-white text-3xl py-8">
+                                            <div class="text-black/70">
+                                                <h3>$ 10</h3>
+                                            </div>
+                                            <div>
+                                                <p class="text-gray-400 text-sm">per month</p>
+                                            </div>
+                                        </div>
+                                        <div class="py-7 bg-black/10 flex justify-center items-center">
+                                            <button
+                                                class="bg-white px-4 py-2 text-xl text-center text-black hover:bg-black hover:text-white cursor-pointer">
+                                                Sign Up
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Pro price  -->
+                                <div class="max-w-sm shadow-sm hover:shadow-xl transition-shadow duration-100">
+                                    <!-- header -->
+                                    <div class="bg-black text-white text-center py-8 ">
+                                        <h3>Pro</h3>
+                                    </div>
+                                    <!-- features  -->
+                                    <div class="bg-white divide-y divide-gray-200 text-center text-gray-400">
+                                        <div class="py-4">Web Design</div>
+                                        <div class="py-4">Photography</div>
+                                        <div class="py-4">50GB Storage</div>
+                                        <div class="py-4">Endless Support</div>
+                                        <!-- price section  -->
+                                        <div class="text-center bg-white text-3xl py-8 ">
+                                            <div class="text-black/70">
+                                                <h3>$ 25</h3>
+                                            </div>
+                                            <div <p class="text-gray-400 text-sm">per month</p>
+                                            </div>
+                                        </div>
+                                        <div class="py-7 bg-black/10 flex justify-center items-center">
+                                            <button
+                                                class="bg-white px-4 py-2 text-xl text-center text-black hover:bg-black hover:text-white cursor-pointer">
+                                                Sign Up
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </h3>
+                    </div>
+                </div>
+                <!-- Contact container  -->
+                <div class="text-black/70">
+                    <h2 class="text-3xl text-black-60 my-4">Contact Me</h2>
+                    <div class="border-b-1 border-gray-400/10 m-3"></div>
+                    <div class="px-7">
+                        <div class="flex justify-start items-center gap-7  my-8">
+                            <i class="fa-solid fa-location-dot text-3xl"></i>
+                            <p class="text-lg">Chicago, US</p>
+                        </div>
+                        <div class="flex justify-start items-center gap-7 my-8">
+                            <i class="fa-solid fa-phone text-3xl"></i>
+                            <p class="text-lg">Phone: +00 151515</p>
+                        </div>
+                        <div class="flex justify-start items-center gap-7  my-8">
+                            <i class="fa-solid fa-envelope text-3xl"></i>
+                            <p class="text-lg"> Email: mail@mail.com</p>
+                        </div>
+                    </div>
+                    <!-- image containe  -->
+                    <div class="p-3 my-2 flex justify-center">
+                        <img class="w-full h-auto  object-cover shadow grayscale-60"
+                            src="https://plus.unsplash.com/premium_photo-1661964027072-49d6e9e158eb?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="">
+                    </div>
+                    <!-- text sections -->
+                    <div>
+                        <div class="my-4 text-black/70">
+                            <p>Lets get in touch, Send me a message:</p>
+                        </div>
+                        <form action="">
+                            <input type=" text" placeholder="Name"
+                                class="w-full  px-4 py-4 my-4 border border-black/20">
+                            <input type=" text" placeholder="Email"
+                                class="w-full  px-4 py-4 my-4 border border-black/20">
+                            <input type=" text" placeholder="Subject"
+                                class="w-full  px-4 py-4 my-4 border border-black/20">
+                            <input type=" text" placeholder="Message"
+                                class="w-full  px-4 py-4 my-4 border border-black/20">
+                            <button
+                                class="bg-black/10 px-7 py-3 whitespace-nowrap my-2 hover:bg-black/30 cursor-pointer hover tracking-wider flex justify-center items-center gap-2 text-black/90 flex-wrap">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+
+
+
+                </div>
+
+                
+        </div>
+        <!-- footer section -->
+                <div class="w-full bg-black/10 flex-col justify-center items-center py-30 flex-wrap mt-20">
+                    <ul class="flex justify-center gap-1 text-xl text-black/70 flex-wrap">
+                        <i class="fa-brands fa-square-facebook hover:text-black/40"></i>
+                        <i class="fa-brands fa-instagram hover:text-black/40"></i>
+                        <i class="fa-brands fa-snapchat hover:text-black/40"></i>
+                        <i class="fa-brands fa-pinterest-p hover:text-black/40"></i>
+                        <i class="fa-brands fa-twitter hover:text-black/40"></i>
+                        <i class="fa-brands fa-linkedin-in hover:text-black/40"></i>
+                    </ul>
+                    <div class="flex items-center justify-center gap-2 text-black/70 text-sm my-4 flex-wrap">
+                        <p>Powered by</p><a class="underline hover:text-green-400/50" href="#">ali.webDeveloper</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <script>
+        const img_container = document.getElementById("img-container");
+        imgData = [
+            {
+                id: 1,
+                link: "https://images.unsplash.com/photo-1749807597192-c697cde33d01?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0",
+            },
+            {
+                id: 2,
+                link: "https://images.unsplash.com/photo-1746310833406-1216bee76a09?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1MHx8fGVufDB8fHx8fA%3D%3D",
+            },
+            {
+                id: 3,
+                link: "https://images.unsplash.com/photo-1743701168271-15d33fac46e8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5OHx8fGVufDB8fHx8fA%3D%3D",
+            },
+
+            {
+                id: 4,
+                link: "https://images.unsplash.com/photo-1749498682646-45e7c11506ec?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzOHx8fGVufDB8fHx8fA%3D%3D",
+            },
+            {
+                id: 5,
+                link: "https://images.unsplash.com/photo-1748989431540-434fad2e77c7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzOXx8fGVufDB8fHx8fA%3D%3D",
+            },
+            {
+                id: 6,
+                link: "https://images.unsplash.com/photo-1749046147908-e2879724fd0c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1OXx8fGVufDB8fHx8fA%3D%3D",
+            },
+        ];
+
+        img_container.innerHTML = imgData
+            .map(
+                (data) =>
+                    `<img key=${data.id}
+                class="w-full grayscale-90"
+                src=${data.link}
+                alt="Portfolio Image"
+              />`
+            )
+            .join("");
+    </script>
+</body>
+
+</html>
